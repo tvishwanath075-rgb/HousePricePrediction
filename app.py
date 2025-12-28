@@ -17,3 +17,10 @@ scaler = StandardScaler()
 scaled_X = scaler.fit_transform(final_X)
 
 st.sidebar.title('Select House feature:')
+st.sidebar.image('https://cdn.pixabay.com/animation/2023/06/01/08/53/08-53-15-862_512.gif')
+all_value = []
+for i in final_X:
+  result = st.sidebar.slider(f'select {i} value',)
+  all_value.append(result)
+
+st.write(all_value)
